@@ -7,10 +7,10 @@
 - Use pip to install and manage packages
 
 Step 1: Install Python 3.8.7 on system
-https://www.python.org/downloads/release/python-387/ 
+- https://www.python.org/downloads/release/python-387/ 
 
 Step 2: Set up a new virtual environment named 'cf-python-base'
-`mkvirtualenv cf-python-base`
+- `mkvirtualenv cf-python-base`
 
 Step 3: Install Visual Studio Code
 - Create a script named 'add.py' that adds up 2 numbers that the user enters
