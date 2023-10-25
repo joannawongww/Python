@@ -6,9 +6,10 @@
 - Summarize use of objects in PYthon
 - Create data structure for Recipe app
 
-Below are the steps for the task, done in IPython shell:
+#### Below are the steps for the task, done in IPython shell:
 
-Step 1-2: Create structure for first recipe:
+##### Step 1-2: Create structure for first recipe:
+
 `recipe_1 = {'Name': 'Tea', 'Cooking Time': 5, 'Ingredients': 'Tea leaves', 'Sugar', 'Water'}`
 
 - Have chosen dictionary as data structure due to its flexibility
@@ -17,14 +18,16 @@ Step 1-2: Create structure for first recipe:
 - No restriction for immutable data types for values
 - Able to store Name as str, Cooking Time as int and Ingredients as list.
 
-Step 3: Create outer structure called all_recipes
+##### Step 3: Create outer structure called all_recipes
+
 `all_recipes = []`
 
 - Have chosen list for all_recipes
 - all_recipes need to be sequential and able to store multiple recipes.
 - lists are able to keep the order of elements which is required
 
-Step 4: Generate 4 more recipes and append to all_recipes
+##### Step 4: Generate 4 more recipes and append to all_recipes
+
 `recipe_2 = {'Name': 'Ginger Tea', 'Cooking time': 5, 'Ingredients': ['Ginger', 'Sugar', 'Water']}`
 
 `recipe_3 = {'Name': 'Coffee', 'Cooking time': 5, 'Ingredients': ['Coffee Powder', 'Milk', 'Water', 'Sugar']}`
@@ -38,7 +41,8 @@ Step 4: Generate 4 more recipes and append to all_recipes
 `all_recipes.apend(recipe_4)`
 `all_recipes.apend(recipe_5)`
 
-Step 5: Print ingredients of each recipe as 5 different lists in IPython
+##### Step 5: Print ingredients of each recipe as 5 different lists in IPython
+
 `print(all_recipes[0]['Ingredients])`
 `print(all_recipes[1]['Ingredients])`
 `print(all_recipes[2]['Ingredients])`
