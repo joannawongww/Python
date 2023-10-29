@@ -1,5 +1,3 @@
-# Python
-
 ## Exercise 1.1
 
 ### Tasks
