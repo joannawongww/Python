@@ -7,7 +7,7 @@
 
 ##### Steps
 
-Step 1-2: Initialize 2 empty lists:
+Step 1-2: Initialize 2 empty lists:  
 `recipes_list = []`  
 `ingredients_list = []`
 
