@@ -29,13 +29,14 @@ def calc_difficulty(cooking_time, ingredients):
     return difficulty
 
 
-filename = (str(input('Enter filename: ')) + ".bin")
+filename = (str(input('Enter filename of recipes to be saved into: ')) + ".bin")
 
 try:
-    file = open(filename, 'r')
+    file = open(filename, 'rb')
     data = pickle.load(file)
+    print('File found, loading now...')
 except FileNotFoundError:
-    print('Filename not found')
+    print('Filename not found - creating file now')
     data = {'recipes_list': [], 'all_ingredients': []}
 except:
     print('An unexpected error occurs')

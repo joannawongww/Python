@@ -38,7 +38,7 @@ def search_ingredients(data):
                 print("Difficulty: " + recipe["difficulty"])
 
 
-filename = input("Enter name of file: ")
+filename = input("Enter filename of recipes: ")
 
 try:
     file = open(filename, 'rb')
