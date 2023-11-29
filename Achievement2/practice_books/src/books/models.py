@@ -10,18 +10,12 @@ class Book(models.Model):
     name = models.CharField(max_length=120)
     # genre choice, show list downdrop, default as classic
     genre_choices = (
-        ('classic',
-         'Classic'),
-        ('romantic',
-         'Romantic'),
-        ('comic',
-         'Comic'),
-        ('fantasy',
-         'Fantasy'),
-        ('horror',
-         'Horror'),
-        ('educational',
-         'Educational')
+        ('classic', 'Classic'),
+        ('romantic', 'Romantic'),
+        ('comic', 'Comic'),
+        ('fantasy', 'Fantasy'),
+        ('horror', 'Horror'),
+        ('educational', 'Educational')
     )
 
     genre = models.CharField(
