@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<h1>Details:</h1>
+
+<head>
+    <style>
+        table {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        img {
+            margin-left: auto;
+            margin-right: auto;
+            width: 300px;
+            height: 200px;
+            border-radius: 20px;
+            padding: 5px;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2 style="text-align: center;">Recipe: {{object.name}}</h2>
+        <table border="1" cellpadding="3" cellspacing="3">
+            <tr>
+                <td><b>Description</b></td>
+                <td>{{object.description}}</td>
+            </tr>
+            <tr>
+                <td><b>Difficulty</b></td>
+                <td>{{object.calculate_difficulty}}</td>
+            </tr>
+            <tr>
+                <td><b>Cooking time</b></td>
+                <td>{{object.cooking_time}} mins</td>
+            </tr>
+            <tr>
+                <td><b>Ingredients</b></td>
+                <td>{{object.ingredients}}</td>
+            </tr>
+        </table>
+        <p><img src="{{object.pic.url}}"></p>
+
+        <a href="/recipes/">Back: View all Recipes</a>
+
+    </div>
+</body>
