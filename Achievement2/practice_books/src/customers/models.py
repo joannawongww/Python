@@ -9,6 +9,7 @@ class Customer(models.Model):
     # class attribute: name and notes
     name = models.CharField(max_length=120)
     notes = models.TextField()
+    pic = models.ImageField(upload_to='customers', default='no_picture.jpg')
 
     # string representation of object
     # can decide parameter want to use to refer to customer
