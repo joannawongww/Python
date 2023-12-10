@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.contrib.auth.decorators import login_required  # protect FBV
 
 # Create your views here.
 
@@ -9,3 +10,8 @@ from django.shortcuts import render
 
 def home(request):
     return render(request, 'sales/home.html')
+
+
+@login_required
+def records(request):
+    return render(request, 'sales/records.html')
