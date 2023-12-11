@@ -13,7 +13,7 @@ class Sale(models.Model):
     # total sale price
     price = models.FloatField()
     # date of sale: auto set to current date
-    date_created = models.DateTimeField(auto_now_add=True)
+    date_created = models.DateTimeField(blank=True)
 
     def __str__(self):
-        return f"id: {self.id}, book: {self.book.name}, quantity: {self.quantity}"
+        return f"id: {self.id}, book: {self.book.name}, quantity: {self.quantity}, price: {self.price}"
