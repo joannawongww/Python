@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Recipe Search</title>
+</head>
+
+<body>
+    <div>
+        <a href="{%url 'recipe:recipe_list' %}">Recipe List</a>
+        <a href="{%url 'logout' %}"> Logout </a>
+    </div>
+    <hr>
+    <h1> Search for recipe records </h1>
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{form}}
+        <button type="submit">Search</button>
+    </form>
+
+    {% if recipe_df %}
+    {{recipe_df|safe}}
+    <br>
+    <img src="data:image/png;base64, {{chart|safe}}">
+    {% else %}
+    <h3> no data</h3>
+    {% endif %}
+</body>
+
+</html>

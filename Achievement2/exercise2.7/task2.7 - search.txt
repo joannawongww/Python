@@ -1,0 +1,2 @@
+Allow users to search recipes by recipe name
+Allow users to search ingredients and display recipes with searched ingredient

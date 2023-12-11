@@ -5,6 +5,7 @@ from django.contrib.auth import authenticate, login, logout
 # django form for auth
 from django.contrib.auth.forms import AuthenticationForm
 
+
 # function to login
 
 

@@ -26,7 +26,7 @@ urlpatterns = [
     path('', include('recipe.urls')),
     path('login/', login_view, name='login'),
     path('logout/', logout_view, name='logout'),
-    path('logout/success', logout_success, name='logout')
+    path('logout/success', logout_success, name='logout'),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
