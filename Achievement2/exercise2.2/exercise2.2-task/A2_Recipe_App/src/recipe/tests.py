@@ -3,11 +3,12 @@ from django.test import TestCase
 # Create your tests here.
 # import User model first
 from .models import Recipe
+from .forms import RecipeSearchForm
 
 # class to write test
 
 
-class RecipeModellTest(TestCase):
+class RecipeModelTest(TestCase):
     # initialize fixed variable
     def setUpTestData():
         # set up non-modified object used by all test
@@ -53,3 +54,10 @@ class RecipeModellTest(TestCase):
     def test_get_absolute_url(self):
         recipe = Recipe.objects.get(id=1)
         self.assertEqual(recipe.get_absolute_url(), '/recipes/1')
+
+
+class RecipeSearchFormTest(TestCase):
+    def test_get_difficulty(self):
+        form_data = {"recipe_diff": "Easy", "chart_type": "#2"}
+        form = RecipeSearchForm(data=form_data)
+        self.assertTrue(form.is_valid())
